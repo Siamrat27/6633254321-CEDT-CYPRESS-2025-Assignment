@@ -1,0 +1,12 @@
+{
+  "valid": { "username": "John Doe", "password": "ThisIsNotAPassword" },
+  "invalidPassword": {
+    "username": "John Doe",
+    "password": "WrongPassword123!"
+  },
+  "invalidUsername": {
+    "username": "John Wick",
+    "password": "ThisIsNotAPassword"
+  },
+  "comment": "Test comment"
+}
