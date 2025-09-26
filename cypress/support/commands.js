@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("login", (username, password) => {
+  cy.visit("https://katalon-demo-cura.herokuapp.com/");
+  cy.get("#btn-make-appointment").click();
+  cy.get("#txt-username").type(username);
+  cy.get("#txt-password").type(password, { log: false });
+  cy.get("#btn-login").click();
+});
